@@ -1,0 +1,220 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>goBWA</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid="UA-166036181-1"
+                  id="rp-bwa.github.io"
+                  title="goBWA"
+                  environment="web"
+                  feedback-link="https://rp-bwa.github.io">
+    
+      <google-codelab-step label="My sharepoint" duration="0">
+        <p><a href="https://myrp-my.sharepoint.com/personal/tan_kok_cheng_rp_edu_sg" target="_blank">https://myrp-my.sharepoint.com/personal/tan_kok_cheng_rp_edu_sg</a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="UC1" duration="0">
+        <ol type="1" start="1">
+<li>Create Form</li>
+<li>Copy excel file to one drive</li>
+<li>Power automate to update new entry to the excel file</li>
+<li>Send email to notify the submission</li>
+</ol>
+<p class="image-container"><img style="width: 601.70px" src="img\64001079ddbfcd16.png"></p>
+<p>Take note that the name of the form should be unique. If you have multiple form with the same name, you may not know which form to use. </p>
+<p class="image-container"><img style="width: 601.70px" src="img\627d455a81549b0.png"></p>
+<p>Need to fill up the row for the excel with the data from the form. </p>
+<ul>
+<li>Use the dynamic content</li>
+</ul>
+<p class="image-container"><img style="width: 601.70px" src="img\7d3a4fdaff946e9.png"></p>
+<p class="image-container"><img style="width: 601.70px" src="img\badf8dde3a5c57ab.png"></p>
+<h3 is-upgraded>Use Sharepoint List</h3>
+<p>Slide 92</p>
+<h4 is-upgraded>Step 1: Create a List first:</h4>
+<ul>
+<li>Click on dropdown to see My Lists. </li>
+<li><img style="width: 321.00px" src="img\49fc6529ee72d980.png"></li>
+</ul>
+<p>For a new List created, the first item, title cannot be deleted, but can be renamed. Need to click on the gear icon -&gt; List settings to edit the list</p>
+<p class="image-container"><img style="width: 358.00px" src="img\1e22be2d0a179bdc.png"></p>
+<h4 is-upgraded>Step 2: Create the power automate</h4>
+<p class="image-container"><img style="width: 601.70px" src="img\905174802631240a.png"></p>
+<p>For Create Item, need to specify the site address, need to copy from the Share Point List. </p>
+<ul>
+<li>Take note that the copy/paste has some leading space, must copy to notepad++ first</li>
+</ul>
+<p class="image-container"><img style="width: 601.70px" src="img\e27b616b85aab84f.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="UC2" duration="0">
+        <p>Use Cases</p>
+<ul>
+<li>Organizing worldwide event. Different countries entere data into an excel file. </li>
+<li>Team A needs sign up information and overview of number of sign-up from china</li>
+</ul>
+<p>Registration.xlsx (<a href="https://mockaroo.com" target="_blank">https://mockaroo.com</a>) </p>
+<ul>
+<li>Improve data entry using excel validation</li>
+<li>Report and pivot table</li>
+</ul>
+<h3 is-upgraded>Data validation using Excel</h3>
+<p>Step 1: </p>
+<ul>
+<li>Save registration.xlsx in onedrive </li>
+<li>Open in desktop excel: format as table, change table name to tableR. </li>
+</ul>
+<p>Step 2: </p>
+<ul>
+<li>Do data validation</li>
+<li>first _name and Last name</li>
+<li>Fill in setting, input message and error alert</li>
+<li>Email </li>
+<li>=ISNUMBER(MATCH(&#34;*@*.?*&#34;,C2,FALSE))</li>
+<li>Gender</li>
+<li>Setting tab is hidden, should not be hidden </li>
+</ul>
+<p>Step 3: </p>
+<ul>
+<li>Upload to onedrive, and set the permission on the link settings</li>
+<li><img style="width: 601.70px" src="img\5aa1566e7c18f06a.png"></li>
+</ul>
+<h3 is-upgraded>Power Query</h3>
+<p>Create a report.xlsx, Import Data from registration, and use power query to remove and filter data. </p>
+<h3 is-upgraded>Create Pivot Table</h3>
+<p>Click on the Data tab, will be able to find the Flash Fill Icon. </p>
+<p class="image-container"><img style="width: 126.00px" src="img\1e94079eaf23f66b.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="UC3" duration="0">
+        <p>Use Cases</p>
+<ul>
+<li>Instant Cloud Flow</li>
+</ul>
+<p>utcNow() ← expression</p>
+<p>addMinutes(utcNow(), 30) ← add 30minutes to current time</p>
+<p class="image-container"><img style="width: 601.70px" src="img\75bef671d96ecd7.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="UC4 (S167)" duration="0">
+        <p>Use Cases</p>
+<p class="image-container"><img style="width: 601.70px" src="img\d7df04defcdbf30f.png"></p>
+<p class="image-container"><img style="width: 601.70px" src="img\96ba6b6c4d5f8d12.png"></p>
+<ol type="1" start="1">
+<li><h3 is-upgraded>Import Excel ProductList to create the first list</h3>
+</li>
+<li><h3 is-upgraded>Create the second list: <strong>Consignment</strong> manually (S186)</h3>
+</li>
+</ol>
+<ol type="1" start="1">
+<li>Take note that instruction not given for consignQty, returnQty, approveStatus and approveComments in next few slides</li>
+</ol>
+<ol type="1" start="3">
+<li><h3 is-upgraded>Create Automated CloudFlow (S195)</h3>
+</li>
+</ol>
+<p class="image-container"><img style="width: 483.50px" src="img\952a697d6c1611a5.png"></p>
+<p>The site address is basically the site address of my account </p>
+<p class="image-container"><img style="width: 601.70px" src="img\c96ce9d7ec170abf.png"></p>
+<p>Get the <strong>Manager </strong>of the person who created a new item in the sharepoint list. The person who created the item can be retrieved from the <strong>Created By Email</strong>. </p>
+<p class="image-container"><img style="width: 601.70px" src="img\17f5653e767beafa.png"></p>
+<ul>
+<li>Select Approve/Reject - First to respond</li>
+<li>Assigned to is hardcoded now, by right it should be the manager email</li>
+<li>Need to add the Link to Item for item link</li>
+</ul>
+<p class="image-container"><img style="width: 601.70px" src="img\a0cd09893a45c52c.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="UC5" duration="0">
+        <p>Use Cases</p>
+<ul>
+<li>Download Bio-demo data</li>
+<li>Download photo</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="FORMS" duration="0">
+        <h3 is-upgraded>How to delete from</h3>
+<ul>
+<li>Go to Forms </li>
+<li>Scroll down to the bottom to see &#34;All my Forms&#34; on bottom right corner. </li>
+<li><img style="width: 346.00px" src="img\f786064efea6f137.png"></li>
+<li>Can delete the forms in the recycle bin<br></li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="LIST" duration="0">
+        <h3 is-upgraded>How to delete list</h3>
+<ul>
+<li>Need to empty the list before they can be deleted</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Power Automate" duration="0">
+        <p><a href="https://chercher.tech/power-automate/variables-power-automate" target="_blank">Variables In Power Automate (chercher.tech)</a></p>
+<p><a href="https://docs.microsoft.com/en-gb/power-automate/?utm_source=flow-sidebar&utm_medium=web" target="_blank">https://docs.microsoft.com/en-gb/power-automate/?utm_source=flow-sidebar&amp;utm_medium=web</a> </p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="NTUC Use-case" duration="0">
+        <ul>
+<li>List → NTUC-UC-List</li>
+<li>Site: <a href="https://myrp-my.sharepoint.com/personal/tan_kok_cheng_rp_edu_sg/Lists/NTUC/AllItems.aspx" target="_blank">https://myrp-my.sharepoint.com/personal/tan_kok_cheng_rp_edu_sg/Lists/NTUC/AllItems.aspx</a> </li>
+<li><img style="width: 468.50px" src="img\4bee2aa2624ca3c7.png"></li>
+<li>Filter data for list</li>
+<li><a href="https://diyd365.com/2019/11/20/every-power-automate-ms-flow-filter-query-you-ever-wanted-to-know-as-a-functional-consultant/" target="_blank">https://diyd365.com/2019/11/20/every-power-automate-ms-flow-filter-query-you-ever-wanted-to-know-as-a-functional-consultant/</a> </li>
+</ul>
+<p>From Expression → copy the field to expression to notepad to find out the expression</p>
+<p>Can use for comparison</p>
+<p>formatDateTime(addDays(utcNow(), 7), &#39;yyyy-mm-dd&#39;) </p>
+<p>items(&#39;Apply_to_each_2&#39;)?[&#39;Date_Member_Email_Received&#39;]</p>
+<p>{&#34;source&#34;:&#34;la-draft-clipboard&#34;,&#34;value&#34;:[{&#34;tokenKey&#34;:&#34;5917ECFF-1634-43CD-9A89-21E6E2644B9B&#34;,&#34;type&#34;:&#34;literal&#34;,&#34;tokenExpression&#34;:&#34;S-abcdef1234-&#34;}]}</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>

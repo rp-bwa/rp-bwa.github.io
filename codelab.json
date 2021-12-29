@@ -1,0 +1,27 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-12-29T07:25:30Z",
+  "id": "rp-bwa.github.io",
+  "duration": 0,
+  "title": "goBWA",
+  "authors": "TAN KOK CHENG",
+  "summary": "goBWA for Acad Staff",
+  "source": "1nxOeyJoy4nAGiXzKsYlr15o1rqo071Nv_0olAYR0VhQ",
+  "theme": "web",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "Web"
+  ],
+  "tags": [
+    "kiosk",
+    "web"
+  ],
+  "feedback": "https://rp-bwa.github.io",
+  "ga": "UA-166036181-1",
+  "url": "rp-bwa.github.io"
+}
